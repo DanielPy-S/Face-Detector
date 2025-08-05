@@ -1,0 +1,44 @@
+/* Estilo general del cuerpo */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Título animado */
+#titulo {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Estilo para video y canvas */
+video, canvas {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+/* Canvas con sombra y bordes suaves
